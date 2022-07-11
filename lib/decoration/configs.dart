@@ -1,34 +1,21 @@
 import 'package:flutter/material.dart';
-extension HexColor on Color {
-  /// String is in the format "aabbcc" or "ffaabbcc" with an optional leading "#".
-  static Color fromHex(String hexString) {
-    final buffer = StringBuffer();
-    if (hexString.length == 6 || hexString.length == 7) buffer.write('ff');
-    buffer.write(hexString.replaceFirst('#', ''));
-    return Color(int.parse(buffer.toString(), radix: 16));
-  }
-
-  /// Prefixes a hash sign if [leadingHashSign] is set to `true` (default is `true`).
-  String toHex({bool leadingHashSign = true}) => '${leadingHashSign ? '#' : ''}'
-      '${alpha.toRadixString(16).padLeft(2, '0')}'
-      '${red.toRadixString(16).padLeft(2, '0')}'
-      '${green.toRadixString(16).padLeft(2, '0')}'
-      '${blue.toRadixString(16).padLeft(2, '0')}';
-}
 
 class Configs {
   static String appName = "Brain Sells";
   //Colors for theme
 
-  // static var primaryColor = Color(00003347FF).toHex();
-  static const secondaryColor = Color.fromRGBO(247, 185, 146, 1);
-  static const tertiaryColor = Color.fromRGBO(215, 161, 93, 1);
-  static const quardiaryColor = Color.fromRGBO(213, 227, 232, 1);
-  // static const pentiaryColor = Color.fromRGBO(20, 51, 78, 1);
-  // static const hexadiaryColor = Color.fromRGBO(93, 147, 215, 1);
-  static const backgroundColor = Color.fromRGBO(255, 242, 224, 1);
-  static const statusBarColor = Color.fromRGBO(0, 69, 135, 1);
-  static const stickyNotesColor = Color.fromRGBO(254, 255, 156, 1);
+  static const primaryColor = Color.fromRGBO(238, 47, 105, 1);
+  static const secondaryColor = Color.fromRGBO(51, 71, 255, 1);
+
+  static const paradisePink = Color.fromRGBO(238, 47, 105, 1);
+  static const blueRYB = Color.fromRGBO(51, 71, 255, 1);
+  static const tickleMePink = Color.fromRGBO(51, 71, 255, 1);
+  static const nadeshikoPink = Color.fromRGBO(248, 180, 200, 1);
+  static const antiqueWhite = Color.fromRGBO(255, 238, 219, 1);
+  static const oxfordBlue = Color.fromRGBO(2, 34, 59, 1);
+  static const black = Color.fromRGBO(18, 18, 18, 1);
+  // static var paradisePink = Color.fromRGBO(51, 71, 255, 1),
+  // static var paradisePink = Color.fromRGBO(51, 71, 255, 1),
 
   //Wheel Color
   static const color1 = Color.fromRGBO(164, 31, 142, 1); // red-purple
@@ -76,6 +63,12 @@ class Configs {
     top: Configs.screenPadding / 1.5,
   );
 
+  static RoundedRectangleBorder largeRoundedRectangleBorder() {
+    return const RoundedRectangleBorder(
+      borderRadius: BorderRadius.all(Radius.circular(30.5)),
+    );
+  }
+
   static RoundedRectangleBorder roundedRectangleBorder() {
     return const RoundedRectangleBorder(
       borderRadius: BorderRadius.all(Radius.circular(12.5)),
@@ -90,5 +83,10 @@ class Configs {
 
   static double listViewWidth(BuildContext context) {
     return (MediaQuery.of(context).size.width - (Configs.screenPadding * 2));
+  }
+  static SizedBox spacer(){
+    return const SizedBox(
+      height: 10,
+    );
   }
 }

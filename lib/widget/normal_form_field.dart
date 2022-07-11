@@ -54,7 +54,7 @@ class NormalFormField extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: MediaQuery.of(context).size.width / 1.2,
+      width: MediaQuery.of(context).size.width / 1.35,
       child: TextFormField(
         enabled: enabled ?? true,
         readOnly: readOnly ?? false,
