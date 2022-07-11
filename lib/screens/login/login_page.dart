@@ -19,7 +19,8 @@ class _LoginPageState extends State<LoginPage> {
   // double height = MediaQuery.of(context).size.height;
   Widget build(BuildContext context) {
     return Container(
-      color: Configs.blueRYB,
+      decoration: BoxDecoration(gradient: LinearGradient(colors: [Configs.secondaryColor1,Configs.secondaryColor2])),
+
       child: Column(
 
         // crossAxisAlignment: CrossAxisAlignment.center,

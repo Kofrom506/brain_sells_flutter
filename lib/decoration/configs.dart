@@ -4,8 +4,15 @@ class Configs {
   static String appName = "Brain Sells";
   //Colors for theme
 
-  static const primaryColor = Color.fromRGBO(238, 47, 105, 1);
-  static const secondaryColor = Color.fromRGBO(51, 71, 255, 1);
+
+  static const primaryColor1 = Color.fromRGBO(239, 57, 112, 1);
+  static const primaryColor2 = Color.fromRGBO(238, 47, 105, 1);
+  static const primaryColor3 = Color.fromRGBO(246, 142, 175, 1);
+  static const primaryColor4 = Color.fromRGBO(255, 238, 219, 1);
+
+  static const secondaryColor1 = Color.fromRGBO(51, 71, 255, 1);
+  static const secondaryColor2 = Color.fromRGBO(2, 34, 59, 1);
+
 
   static const paradisePink = Color.fromRGBO(238, 47, 105, 1);
   static const blueRYB = Color.fromRGBO(51, 71, 255, 1);

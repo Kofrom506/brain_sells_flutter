@@ -22,9 +22,10 @@ class LongRaisedButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width: MediaQuery.of(context).size.width / dividedBy,
-      child: RaisedButton(
+      child: FloatingActionButton(
+        backgroundColor: color,
         shape: Configs.largeRoundedRectangleBorder(),
-        color: color,
+        // color: color,
         onPressed: disabled ? null : onPressed,
         child: child,
       ),
