@@ -70,7 +70,7 @@ class _SignUpPageState extends State<SignUpPage> {
                               fontSize: 50, fontWeight: FontWeight.bold),
                         ),
                         Text(
-                          "Sign Up untuk masuk",
+                          "Sign Up untuk memulai",
                           style: TextStyle(
                               fontSize: 20, fontWeight: FontWeight.w400),
                         ),
@@ -90,16 +90,28 @@ class _SignUpPageState extends State<SignUpPage> {
                         SizedBox(
                           height: 10,
                         ),
-                        NormalFormField(
-                          text: "",
-                          hintText: "Email",
+                        Row(
+                          children: [
+                            Icon(Icons.person),
+                            SizedBox(width: 10),
+                            NormalFormField(
+                              text: "",
+                              hintText: "Full Name",
+                            ),
+                          ],
                         ),
                         SizedBox(
                           height: 10,
                         ),
-                        NormalFormField(
-                          text: "",
-                          hintText: "Email",
+                        Row(
+                          children: [
+                            Icon(Icons.camera_alt),
+                            SizedBox(width: 10),
+                            NormalFormField(
+                              text: "",
+                              hintText: "Instagram Link",
+                            ),
+                          ],
                         ),
                         SizedBox(
                           height: 10,
@@ -110,18 +122,12 @@ class _SignUpPageState extends State<SignUpPage> {
                             SizedBox(width: 10),
                             NormalFormField(
                               text: "",
-                              hintText: "Password",
+                              hintText: "Enter Your Password",
                             ),
                           ],
                         ),
                         SizedBox(
                           height: 10,
-                        ),
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.end,
-                          children: [
-                            Text("Lupa Password"),
-                          ],
                         ),
                         Configs.spacer(),
                         Configs.spacer(),
@@ -130,7 +136,7 @@ class _SignUpPageState extends State<SignUpPage> {
                         Configs.spacer(),
                         Configs.spacer(),
                         Configs.spacer(),
-                        Center(child: Text("Belum punya akun? Buat di sini!",textAlign: TextAlign.end,style: TextStyle(),),)
+                        Center(child: Text("Sudah punya akun? Masuk di sini!",textAlign: TextAlign.end,style: TextStyle(),),)
 
                       ],
 

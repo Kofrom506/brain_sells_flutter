@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutterapi/decoration/configs.dart';
 import 'package:flutterapi/screens/introduction/introduction_page.dart';
 import 'package:flutterapi/screens/login/login_page.dart';
+import 'package:flutterapi/screens/main_page/main_screen.dart';
 import 'package:flutterapi/screens/sign_up_page/sign_up_screen.dart';
 import 'package:flutterapi/screens/splash_screen_page.dart';
 import 'package:flutterapi/screens/splash_screen_screen.dart';
@@ -29,7 +30,7 @@ class MyApp extends StatelessWidget {
         errorColor: Configs.dangerColor,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: IntroductionPage(),
+      home: MainPageScreen(),
     );
   }
 

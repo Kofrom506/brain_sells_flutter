@@ -6,7 +6,6 @@ class IntroductionPage1 extends StatelessWidget {
   const IntroductionPage1({
     Key? key,
   }) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -80,7 +79,6 @@ class IntroductionCards1 extends StatelessWidget {
   // const IntroductionCards({Key? key}) : super(key: key);
   String textContent;
   IntroductionCards1({required this.textContent});
-
   @override
   Widget build(BuildContext context) {
     return Column(

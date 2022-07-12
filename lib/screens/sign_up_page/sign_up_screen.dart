@@ -20,7 +20,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
     return MaterialApp(
       color: Colors.black,
       home: Scaffold(
-        body: SignUpPage(),
+        body: SafeArea(child: SignUpPage()),
       ),
     );
   }

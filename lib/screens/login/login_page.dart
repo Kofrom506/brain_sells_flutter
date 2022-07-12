@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutterapi/decoration/configs.dart';
+import 'package:flutterapi/screens/sign_up_page/sign_up_screen.dart';
 import 'package:flutterapi/widget/long_press_button.dart';
 import 'package:flutterapi/widget/normal_form_field.dart';
 import 'package:flutterapi/widget/password_formfield.dart';
@@ -12,9 +13,12 @@ class LoginPage extends StatefulWidget {
 
 class _LoginPageState extends State<LoginPage> {
   @override
-  PrintSomething(){
-    print("Hello Functions !!");
-    print("Welcome to Canada");
+  nextPage(BuildContext context) {
+    print("Clicked");
+    Navigator.push(
+      context,
+      MaterialPageRoute(builder: (context) => const SignUpScreen()),
+    );
   }
   // double height = MediaQuery.of(context).size.height;
   Widget build(BuildContext context) {
@@ -112,7 +116,7 @@ class _LoginPageState extends State<LoginPage> {
                         Configs.spacer(),
                         Configs.spacer(),
                         Configs.spacer(),
-                        LongRaisedButton(child: Text("Login",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 25,color: Colors.white)),onPressed: PrintSomething,height: 50,),
+                        LongRaisedButton(child: Text("Login",style: TextStyle(fontWeight: FontWeight.bold,fontSize: 25,color: Colors.white)),onPressed: () => nextPage(context),height: 50,),
                         Configs.spacer(),
                         Configs.spacer(),
                         Configs.spacer(),
