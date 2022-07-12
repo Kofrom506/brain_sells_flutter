@@ -11,7 +11,8 @@ class Configs {
   static const primaryColor4 = Color.fromRGBO(255, 238, 219, 1);
 
   static const secondaryColor1 = Color.fromRGBO(51, 71, 255, 1);
-  static const secondaryColor2 = Color.fromRGBO(2, 34, 59, 1);
+  static const secondaryColor2 = Color.fromRGBO(25, 51, 150, 1);
+  static const secondaryColor3 = Color.fromRGBO(2, 34, 59, 1);
 
 
   static const paradisePink = Color.fromRGBO(238, 47, 105, 1);

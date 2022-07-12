@@ -1,53 +1,86 @@
 // import 'package:flutter/material.dart';
 //
 import 'package:flutter/material.dart';
+import 'package:flutterapi/decoration/configs.dart';
+import 'package:flutterapi/screens/introduction/introduction_page.dart';
 import 'package:flutterapi/screens/login/login_page.dart';
+import 'package:flutterapi/screens/sign_up_page/sign_up_screen.dart';
 import 'package:flutterapi/screens/splash_screen_page.dart';
 import 'package:flutterapi/screens/splash_screen_screen.dart';
 
 import 'screens/login/login_screen.dart';
+import 'screens/sign_up_page/sign_up_page.dart';
 
-void main() {
-  runApp(LoginScreen());
+void main() async{
+  runApp(MyApp());
 }
-//
-class MyApp extends StatefulWidget {
-  @override
-  _MyAppState createState() => _MyAppState();
-}
+class MyApp extends StatelessWidget {
+  // const MyApp({Key key}) : super(key: key);
 
-class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        home:Scaffold(
-          appBar: AppBar(title: Text("API Demo"),),
-          body: Center(
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: [
-                // Container(decoration: BoxDecoration(borderRadius: ),)
-                // // RaisedButton(onPressed: (){}),
-                // Text("Post"),
-              ],
-            ),
-          ),
-        )
-    );
-  }
-}
-
-
-class HomePage extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
-        body: Container(child:Text("Evan")),
+      title: Configs.appName,
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        fontFamily: "Svenska",
+        primaryColor: Configs.primaryColor1,
+        accentColor: Configs.secondaryColor1,
+        errorColor: Configs.dangerColor,
+        visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
+      home: IntroductionPage(),
     );
   }
+
+  static Future<Widget> getHomeScreen(BuildContext context) async {
+    // String email = await TokenVersion.getEmail();
+
+    if (true) {
+      return IntroductionPage();
+    } else {
+      return IntroductionPage();
+    }
+  }
 }
+// //
+// class MyApp extends StatefulWidget {
+//   @override
+//   _MyAppState createState() => _MyAppState();
+// }
+//
+// class _MyAppState extends State<MyApp> {
+//   @override
+//   Widget build(BuildContext context) {
+//     return MaterialApp(
+//         home:Scaffold(
+//           appBar: AppBar(title: Text("API Demo"),),
+//           body: Center(
+//             child: Column(
+//               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+//               children: [
+//                 // Container(decoration: BoxDecoration(borderRadius: ),)
+//                 // // RaisedButton(onPressed: (){}),
+//                 // Text("Post"),
+//               ],
+//             ),
+//           ),
+//         )
+//     );
+//   }
+// }
+//
+//
+// class HomePage extends StatelessWidget {
+//   @override
+//   Widget build(BuildContext context) {
+//     return MaterialApp(
+//       home: Scaffold(
+//         body: Container(child:Text("Evan")),
+//       ),
+//     );
+//   }
+// }
 
 
 //

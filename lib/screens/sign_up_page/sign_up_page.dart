@@ -4,13 +4,13 @@ import 'package:flutterapi/widget/long_press_button.dart';
 import 'package:flutterapi/widget/normal_form_field.dart';
 import 'package:flutterapi/widget/password_formfield.dart';
 
-class LoginPage extends StatefulWidget {
-  const LoginPage({Key? key}) : super(key: key);
+class SignUpPage extends StatefulWidget {
+  const SignUpPage({Key? key}) : super(key: key);
   @override
-  State<LoginPage> createState() => _LoginPageState();
+  State<SignUpPage> createState() => _SignUpPageState();
 }
 
-class _LoginPageState extends State<LoginPage> {
+class _SignUpPageState extends State<SignUpPage> {
   @override
   PrintSomething(){
     print("Hello Functions !!");
@@ -65,12 +65,12 @@ class _LoginPageState extends State<LoginPage> {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
-                          "Halo!",
+                          "Buat Akun",
                           style: TextStyle(
                               fontSize: 50, fontWeight: FontWeight.bold),
                         ),
                         Text(
-                          "Sign in untuk masuk",
+                          "Sign Up untuk masuk",
                           style: TextStyle(
                               fontSize: 20, fontWeight: FontWeight.w400),
                         ),
@@ -86,6 +86,20 @@ class _LoginPageState extends State<LoginPage> {
                               hintText: "Email",
                             ),
                           ],
+                        ),
+                        SizedBox(
+                          height: 10,
+                        ),
+                        NormalFormField(
+                          text: "",
+                          hintText: "Email",
+                        ),
+                        SizedBox(
+                          height: 10,
+                        ),
+                        NormalFormField(
+                          text: "",
+                          hintText: "Email",
                         ),
                         SizedBox(
                           height: 10,
