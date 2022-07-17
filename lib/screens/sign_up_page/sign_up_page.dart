@@ -138,6 +138,7 @@ class _SignUpPageState extends State<SignUpPage> {
                         Configs.spacer(),
                         Center(child: Text("Sudah punya akun? Masuk di sini!",textAlign: TextAlign.end,style: TextStyle(),),)
 
+
                       ],
 
                     ),

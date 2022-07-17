@@ -22,6 +22,10 @@ class Configs {
   static const antiqueWhite = Color.fromRGBO(255, 238, 219, 1);
   static const oxfordBlue = Color.fromRGBO(2, 34, 59, 1);
   static const black = Color.fromRGBO(18, 18, 18, 1);
+
+  static const yellowCard = Color.fromRGBO(255, 238, 219, 1);
+  static const pinkCard = Color.fromRGBO(254, 226, 234, 1);
+  static const blueCard = Color.fromRGBO(219, 236, 255, 1);
   // static var paradisePink = Color.fromRGBO(51, 71, 255, 1),
   // static var paradisePink = Color.fromRGBO(51, 71, 255, 1),
 

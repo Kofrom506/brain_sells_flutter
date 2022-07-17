@@ -8,6 +8,7 @@ import 'package:flutterapi/screens/main_page/main_screen.dart';
 import 'package:flutterapi/screens/sign_up_page/sign_up_screen.dart';
 import 'package:flutterapi/screens/splash_screen_page.dart';
 import 'package:flutterapi/screens/splash_screen_screen.dart';
+import 'package:flutterapi/screens/survey_page/survey_screen.dart';
 
 import 'screens/login/login_screen.dart';
 import 'screens/sign_up_page/sign_up_page.dart';
@@ -30,7 +31,7 @@ class MyApp extends StatelessWidget {
         errorColor: Configs.dangerColor,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: MainPageScreen(),
+      home: SurveyScreen(),
     );
   }
 
