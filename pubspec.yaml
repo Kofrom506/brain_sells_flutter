@@ -35,7 +35,7 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
-#  flutter_swiper: ^1.1.6
+  #  flutter_swiper: ^1.1.6
   carousel_slider: ^4.1.1
   font_awesome_flutter: ^10.1.0
 
@@ -77,6 +77,57 @@ flutter:
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
   # example:
+
+  fonts:
+    - family: Rubik-Black
+        fonts:
+            - asset: assets/fonts/Rubik-Black.ttf
+    - family: Rubik-Bold
+        fonts:
+            - asset: assets/fonts/Rubik-Bold.ttf
+    - family: Rubik-Light
+        fonts:
+            - asset: assets/fonts/Rubik-Light.ttf
+    - family: Rubik-Regular
+        fonts:
+            - asset: assets/fonts/Rubik-Regular.ttf
+
+
+
+    - family: Roboto
+      fonts:
+        - asset: assets/fonts/Roboto-Regular.ttf
+    - family: Roboto-BoldCondensed
+      fonts:
+        - asset: assets/fonts/Roboto-BoldCondensed.ttf
+    - family: Roboto-BoldCondensedItalic
+      fonts:
+        - asset: assets/fonts/Roboto-BoldCondensedItalic.ttf
+    - family: Roboto-Italic
+      fonts:
+        - asset: assets/fonts/Roboto-Italic.ttf
+    - family: Roboto-Light
+      fonts:
+        - asset: assets/fonts/Roboto-Light.ttf
+    - family: Roboto-LightItalic
+        fonts:
+            - asset: assets/fonts/Roboto-LightItalic.ttf
+    - family: Roboto-Medium
+        fonts:
+            - asset: assets/fonts/Roboto-Medium.ttf
+    - family: Roboto-MediumItalic
+        fonts:
+            - asset: assets/fonts/Roboto-MediumItalic.ttf
+    - family: Roboto-Thin
+        fonts:
+            - asset: assets/fonts/Roboto-Thin.ttf
+    - family: Roboto-ThinItalic
+        fonts:
+            - asset: assets/fonts/Roboto-ThinItalic.ttf
+
+
+
+
   # fonts:
   #   - family: Schyler
   #     fonts:

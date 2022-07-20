@@ -1,9 +1,16 @@
+import 'dart:html';
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 
 class Configs {
   static String appName = "Brain Sells";
   //Colors for theme
 
+  static const h1 = TextStyle(fontFamily: "Rubik-Bold", fontSize: 45, letterSpacing: 2, wordSpacing: 0 );
+  static const h2 = TextStyle(fontFamily: "Rubik-Medium", fontSize: 38, letterSpacing: 2, wordSpacing: 0 );
+  static const h3 = TextStyle(fontFamily: "Rubik-Regular", fontSize: 30, letterSpacing: 0, wordSpacing: 0 );
+  static const paragraphText = TextStyle(fontFamily: "Rubik-Light", fontSize: 24, letterSpacing: 0, wordSpacing: 0 );
 
   static const primaryColor1 = Color.fromRGBO(239, 57, 112, 1);
   static const primaryColor2 = Color.fromRGBO(238, 47, 105, 1);
@@ -42,6 +49,7 @@ class Configs {
   static const color10 = Color.fromRGBO(246, 131, 34, 1); // orange
   static const color11 = Color.fromRGBO(241, 61, 64, 1); // red-orange
   static const color12 = Color.fromRGBO(238, 28, 37, 1); // red
+
 
   static const colorAvatars = [
     Color.fromRGBO(29, 155, 209, 1),
@@ -100,5 +108,11 @@ class Configs {
     return const SizedBox(
       height: 10,
     );
+  }
+}
+class h1 extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Text("data",style: TextStyle(fontFamily: "Roboto", ));
   }
 }
